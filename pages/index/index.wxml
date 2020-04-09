@@ -1,18 +1,14 @@
 <swiper style="height: {{ height }}px">
-  <!-- 封面 -->
-  <swiper-item class="img">
-    <!-- 名字 -->
+	<!-- <swiper-item class="img">
     <view class="cover-info">
       <text class="cover-name">{{ name }}</text>
       <text class="cover-spell">{{ spell }}</text>
     </view>
 
-    <!-- 圆形样式 -->
     <view class="big-circle"></view>
     <view class="medium-circle"></view>
     <view class="small-circle"></view>
 
-    <!-- 工作介绍 -->
     <view class="cover-work">
       <text class="cover-job">{{ job }}</text>
       <text class="cover-exp">{{ exp }}</text>
@@ -22,10 +18,9 @@
       我的简历
       <image class="arrow-right" src="../../image/arrow-right.png"></image>
     </view>
-  </swiper-item>
+  </swiper-item> -->
 
-  <!-- 简历信息 -->
-  <swiper-item>
+	<!-- <swiper-item>
     <scroll-view scroll-y="true" style="width: {{ width }}px;height: {{height}}px">
       <view class="resume">
         <view class="section">
@@ -49,6 +44,7 @@
             <text class="info">住址：{{ address }}</text>
           </view>
         </view>
+
         <view class="section">
           <view class="section-info">
             <view class="section-seq">2</view>
@@ -60,8 +56,94 @@
             <progress class="progress" percent="{{ item.percent }}" activeColor="#53B2B0"></progress>
           </view>
         </view>
-        <view class="section"></view>
+
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">3</view>
+            <text class="section-title">教育经历</text>
+          </view>
+
+          <view class="main-ctx" wx:for="{{ edu }}" wx:key="item">
+            <view class="main-ctx__name">
+              <image class="icon-school" src="../../image/icon_school.png"></image>
+              <text>{{ item.school }}</text>
+            </view>
+
+            <view class="row">
+              <view class="info">
+                <image class="icon-book" src="../../image/icon_book.png"></image>
+                <text>{{ item.major }}</text>
+              </view>
+
+              <view class="info">
+                <image class="icon-calendar" src="../../image/icon_calendar.png"></image>
+                <text>{{ item.year }}</text>
+              </view>
+            </view>
+
+            <rich-text class="desc">{{item.desc}}</rich-text>
+          </view>
+        </view>
+        <text class="page">1/4</text>
       </view>
     </scroll-view>
-  </swiper-item>
+  </swiper-item> -->
+
+	<swiper-item>
+		<scroll-view scroll-y="true" style="width: {{ width }}px;height: {{height}}px">
+			<view class="resume">
+				<view class="section">
+					<view class="section-info">
+						<view class="section-seq">4</view>
+						<text class="section-title">工作经历</text>
+					</view>
+
+					<view class="main-ctx" wx:for="{{ work }}" wx:key="item">
+						<view class="main-ctx__name">
+							<image class="icon-company" src="../../image/icon_company.png"></image>
+							<text>{{ item.company }}</text>
+						</view>
+
+						<view class="row">
+							<view class="info">
+								<image class="icon-book" src="../../image/icon_job.png"></image>
+								<text>{{ item.job }}</text>
+							</view>
+
+							<view class="info">
+								<image class="icon-calendar" src="../../image/icon_calendar.png"></image>
+								<text>{{ item.year }}</text>
+							</view>
+						</view>
+
+						<rich-text class="desc">{{item.desc}}</rich-text>
+					</view>
+				</view>
+				<text class="page">2/4</text>
+			</view>
+		</scroll-view>
+	</swiper-item>
+
+	<swiper-item>
+		<scroll-view scroll-y="true" style="width: {{ width }}px;height: {{height}}px">
+			<view class="resume">
+				<view class="section">
+					<view class="section-info">
+						<view class="section-seq">5</view>
+						<text class="section-title">项目经历</text>
+					</view>
+
+					<view class="main-ctx" wx:for="{{ project }}" wx:key="item">
+						<view class="main-ctx__name">
+							<image class="icon-" src="../../image/icon_company.png"></image>
+							<text>{{ item.name }}</text>
+						</view>
+
+						<rich-text class="desc">{{ item.desc }}</rich-text>
+					</view>
+				</view>
+				<text class="page">3/4</text>
+			</view>
+		</scroll-view>
+	</swiper-item>
 </swiper>

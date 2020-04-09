@@ -56,6 +56,7 @@
   left: -10px;
   bottom: 110px;
 }
+
 /* 工作介绍 */
 .cover-work {
   width: 100%;
@@ -92,13 +93,16 @@
   height: 18px;
   vertical-align: -3px;
 }
+
 /* 简历信息 */
 .resume {
   margin: 0 20px;
 }
+
 .section {
   padding-bottom: 30px;
 }
+
 .section-info {
   display: flex;
   border-bottom: 1px solid #333;
@@ -128,12 +132,15 @@
   border-bottom: dashed 1px #333;
   padding: 10px 0;
 }
+
 .col-2 {
   column-count: 2;
 }
+
 .col-1 {
   column-count: 1;
 }
+
 .info {
   display: block;
 }
@@ -148,6 +155,75 @@
   margin-bottom: 5px;
 }
 
-.progress {
+.progress {}
 
+.main-ctx {
+  border-bottom: dashed 1px #999;
+  padding: 10px 0;
+}
+
+.main-ctx:last-of-type{
+  border-bottom: none;
+}
+
+.main-ctx__name {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.icon-school {
+  width: 26px;
+  height: 26px;
+  vertical-align: -6px;
+  margin-right: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.icon-book {
+  width: 16px;
+  height: 16px;
+  vertical-align: -2px;
+  margin-right: 3px;
+}
+
+.icon-calendar {
+  width: 17px;
+  height: 17px;
+  vertical-align: -2px;
+  margin-right: 3px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #999;
+  line-height: 1.5;
+}
+.page{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.icon-company {
+  width: 22px;
+  height: 22px;
+  vertical-align: -4px;
+  margin-right: 5px;
+}
+.icon-job{
+  width: 18px;
+  height: 18px;
+  vertical-align: -3px;
+  margin-right: 3px;
 }

@@ -1,5 +1,5 @@
 <swiper style="height: {{ height }}px">
-	<!-- <swiper-item class="img">
+	<swiper-item class="img">
     <view class="cover-info">
       <text class="cover-name">{{ name }}</text>
       <text class="cover-spell">{{ spell }}</text>
@@ -18,9 +18,9 @@
       我的简历
       <image class="arrow-right" src="../../image/arrow-right.png"></image>
     </view>
-  </swiper-item> -->
+  </swiper-item>
 
-	<!-- <swiper-item>
+	<swiper-item>
     <scroll-view scroll-y="true" style="width: {{ width }}px;height: {{height}}px">
       <view class="resume">
         <view class="section">
@@ -87,7 +87,7 @@
         <text class="page">1/4</text>
       </view>
     </scroll-view>
-  </swiper-item> -->
+  </swiper-item>
 
 	<swiper-item>
 		<scroll-view scroll-y="true" style="width: {{ width }}px;height: {{height}}px">
@@ -135,7 +135,7 @@
 
 					<view class="main-ctx" wx:for="{{ project }}" wx:key="item">
 						<view class="main-ctx__name">
-							<image class="icon-" src="../../image/icon_company.png"></image>
+							<image class="icon-company" src="../../image/icon_computer.png"></image>
 							<text>{{ item.name }}</text>
 						</view>
 
@@ -143,6 +143,24 @@
 					</view>
 				</view>
 				<text class="page">3/4</text>
+			</view>
+		</scroll-view>
+	</swiper-item>
+
+  <swiper-item>
+		<scroll-view scroll-y="true" style="width: {{ width }}px;height: {{height}}px">
+			<view class="resume">
+				<view class="section">
+					<view class="section-info">
+						<view class="section-seq">6</view>
+						<text class="section-title">自我评价</text>
+					</view>
+
+					<view class="main-ctx">
+						<rich-text class="desc">{{ introduction }}</rich-text>
+					</view>
+				</view>
+				<text class="page">4/4</text>
 			</view>
 		</scroll-view>
 	</swiper-item>

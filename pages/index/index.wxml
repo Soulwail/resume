@@ -53,7 +53,7 @@
 
           <view class="skill" wx:for="{{ skills }}" wx:key="item">
             <text class="skill-name">{{ item.name }}</text>
-            <progress class="progress" percent="{{ item.percent }}" activeColor="#53B2B0"></progress>
+            <progress class="progress" percent="{{ item.percent }}" activeColor="#53B2B0" active></progress>
           </view>
         </view>
 
@@ -140,6 +140,7 @@
 						</view>
 
 						<rich-text class="desc">{{ item.desc }}</rich-text>
+            <rich-text class="project-link" wx:if="{{ item.link }}">项目链接：{{ item.link }}</rich-text>
 					</view>
 				</view>
 				<text class="page">3/4</text>

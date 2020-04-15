@@ -207,6 +207,11 @@
   color: #999;
   line-height: 1.5;
 }
+.project-link {
+  font-size: 14px;
+  color: #999;
+  line-height: 2;
+}
 .page{
   display: block;
   width: 100%;

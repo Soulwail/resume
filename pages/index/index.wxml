@@ -38,6 +38,9 @@
             <text class="info">年龄：{{ age }}</text>
           </view>
           <view class="column col-1">
+            <text class="info">个人主页：{{ homepage }}</text>
+          </view>
+          <view class="column col-1">
             <text class="info">邮箱：{{ email }}</text>
           </view>
           <view class="column col-1">
@@ -70,12 +73,12 @@
             </view>
 
             <view class="row">
-              <view class="info">
+              <view class="main-ctx__info">
                 <image class="icon-book" src="../../image/icon_book.png"></image>
                 <text>{{ item.major }}</text>
               </view>
 
-              <view class="info">
+              <view class="main-ctx__info">
                 <image class="icon-calendar" src="../../image/icon_calendar.png"></image>
                 <text>{{ item.year }}</text>
               </view>
@@ -105,12 +108,12 @@
 						</view>
 
 						<view class="row">
-							<view class="info">
+							<view class="main-ctx__info">
 								<image class="icon-book" src="../../image/icon_job.png"></image>
 								<text>{{ item.job }}</text>
 							</view>
 
-							<view class="info">
+							<view class="main-ctx__info">
 								<image class="icon-calendar" src="../../image/icon_calendar.png"></image>
 								<text>{{ item.year }}</text>
 							</view>

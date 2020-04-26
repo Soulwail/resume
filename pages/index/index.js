@@ -15,6 +15,7 @@ Page({
     sex: '男',
     age: '25',
     email: '879457843@qq.com',
+    homepage: 'www.soulwail.com',
     address: '上海市浦东新区沪南公路 8666 号',
     skills: [
       { name: 'JavaScript', percent: 75 },
